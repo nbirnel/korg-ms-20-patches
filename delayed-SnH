@@ -1,0 +1,48 @@
+# vim:ft=synpatch
+VCO1-waveform: triangle
+VCO1-pulsewidth: 11:15 (about 30%)
+VCO1-scale: 32'
+VCO2-waveform: square
+VCO2-pitch: 0
+VCO2-scale: 2'
+Port: 0
+Mastertune: 0
+
+VCO1-level: 10
+VCO2-level: 3
+FM-MG: 0
+FM-EG1: 5
+
+HPF-cutoff: 0
+HPF-peak: 0
+HPF-MG/Total: 0
+HPF-EG2/Ext: 0
+
+LPF-cutoff: 10
+LPF-peak: 0
+LPF-MG/Total: 0
+LPF-EG2/Ext: 0
+
+MG-waveform: 5:00
+MG-freq: 10
+
+EG1-D: 2
+EG1-A: 1
+EG1-R: 0
+
+EG2-H: 0
+EG2-A: 0
+EG2-D: 0
+EG2-S: 10
+EG2-R: 1
+
+volume: 3.5
+
+pink → VCA-in
+EG1-out → VCA-CV-in
+VCA-out → S&H-in
+MG-pulse-out → S&H-clock-in
+S&H-out → freq
+
+# played staccato for a cheerful deep / high poly
+# legato or long notes get S&H effect

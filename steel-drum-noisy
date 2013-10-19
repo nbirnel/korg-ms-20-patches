@@ -1,0 +1,43 @@
+VCO1-waveform: square
+VCO1-pulsewidth: 12o
+VCO1-scale: 16'
+VCO2-waveform: square
+VCO2-pitch: 0
+VCO2-scale: 16'
+Port: 0
+Mastertune: 0
+
+VCO1-level: 10
+VCO2-level: 9
+FM-MG: 0
+FM-EG1: 0
+
+HPF-cutoff: 0
+HPF-peak: 0
+HPF-MG/Total: 0
+HPF-EG2/Ext: 0
+
+LPF-cutoff: 6.1
+LPF-peak: 6
+LPF-MG/Total: 0
+LPF-EG2/Ext: 5
+
+MG-waveform: 100%
+MG-freq: 2.2
+
+EG1-D: 10
+EG1-A: 0
+EG1-R: 0
+
+EG2-H: 0
+EG2-A: .5
+EG2-D: .6
+EG2-S: 10
+EG2-R: 1
+
+volume: 4
+
+KBD-CV-out → S&H-in
+EG1-out → S&H-clock-in
+S&H-out → VCO2-CV-in
+

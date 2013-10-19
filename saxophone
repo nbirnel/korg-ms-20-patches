@@ -1,0 +1,46 @@
+# vim:iskeyword+=& iskeyword+=- iskeyword+=\+
+# from Korg MS-20 Settings Examples p. 2
+VCO1-waveform: pulse
+VCO1-pulsewidth: 8.30o'
+VCO1-scale: 16'
+VCO2-waveform: square
+VCO2-pitch: 
+VCO2-scale: 16'
+Port: 0
+Mastertune: 0
+
+VCO1-level: 10
+VCO2-level: 8
+FM-MG: 2
+FM-EG1: 0 
+
+HPF-cutoff: 3
+HPF-peak: 4
+HPF-MG/Total: 0
+HPF-EG2/Ext: 3
+
+LPF-cutoff: 5
+LPF-peak: 2
+LPF-MG/Total: 0
+LPF-EG2/Ext: 8
+
+MG-waveform: 
+MG-freq: 
+
+EG1-D: 2
+EG1-A: 2
+EG1-R: 0
+
+EG2-H: 0
+EG2-A: 1
+EG2-D: 1.5
+EG2-S: 5
+EG2-R: 1
+
+volume: 4
+
+pink → VCA-in
+VCA-out → Total
+
+
+

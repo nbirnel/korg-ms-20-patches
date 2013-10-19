@@ -1,0 +1,56 @@
+VCO1wf: sq
+VCO1pw: 11:30
+VCO1scale:32'
+VCO2wf: ring
+VCO2pitch: 0
+VCO2scale:16'
+port:0
+mastertune:0
+
+VCO1level:7
+VCO2level:8
+fm-mg:0
+fm-eg1:0
+
+HPFco:1.5
+HPFp:5.8
+HPF-mgmod:0
+HPF-egmod:3.5
+
+LPFco:8.3
+LPFp:1.2
+LPF-mgmod:0
+LPF-egmod:10
+
+mg-wf:
+mg-F:
+EG1-D:0
+EG1-A:2
+EG1-R:.8
+
+EG2-H:0
+EG2-A:1
+EG2-D:0
+EG2-S:10
+EG2-R:1.2
+
+signal-out → ESP-signal-in
+signal:8 (to red-lined)
+low-cut:2.2
+high-cut:7
+ESP-BPF-out → VCA-in
+KBD-trigger-out → EG1-trigger
+EG1-out → VCA-control
+VCA-out → external-signal-in
+
+EG1-rev-out → VCHPF-cutoff
+wheel → VCLPF-cutoff
+volume:4.2
+wheel:2 (hissy bass) 4 (distorted bass) 5 (full static crunch)
+
+
+
+
+
+
+

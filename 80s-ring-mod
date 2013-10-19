@@ -1,0 +1,39 @@
+# vim:iskeyword+=& iskeyword+=- iskeyword+=\+
+VCO1-waveform: saw
+VCO1-pulsewidth: 0
+VCO1-scale: 32'
+VCO2-waveform: ring
+VCO2-pitch: 0
+VCO2-scale: 8'
+Port: 0
+Mastertune: 0
+
+VCO1-level: 10
+VCO2-level: 10
+FM-MG: 0
+FM-EG1: 0
+
+HPF-cutoff: 0
+HPF-peak: 0
+HPF-MG/Total: 0
+HPF-EG2/Ext: 0
+
+LPF-cutoff: 10
+LPF-peak: 0
+LPF-MG/Total: 0
+LPF-EG2/Ext: 0
+
+MG-waveform: 
+MG-freq: 
+
+EG1-D: 
+EG1-A: 
+EG1-R: 
+
+EG2-H: 0
+EG2-A: 0
+EG2-D: 0
+EG2-S: 10
+EG2-R: .8
+
+volume: 2.4

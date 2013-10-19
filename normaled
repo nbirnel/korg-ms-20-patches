@@ -1,0 +1,39 @@
+# vim:ft=synpatch
+VCO1-waveform: saw
+VCO1-pulsewidth: 0
+VCO1-scale: 8'
+VCO2-waveform: saw
+VCO2-pitch: 0
+VCO2-scale: 8'
+Port: 0
+Mastertune: 0
+
+VCO1-level: 10
+VCO2-level: 10
+FM-MG: 0
+FM-EG1: 0
+
+HPF-cutoff: 0
+HPF-peak: 0
+HPF-MG/Total: 0
+HPF-EG2/Ext: 0
+
+LPF-cutoff: 10
+LPF-peak: 0
+LPF-MG/Total: 0
+LPF-EG2/Ext: 0
+
+MG-waveform: triangle
+MG-freq: 5
+
+EG1-D: 0
+EG1-A: 0
+EG1-R: 0
+
+EG2-H: 0
+EG2-A: 0
+EG2-D: 0
+EG2-S: 10
+EG2-R: 0
+
+volume: 4

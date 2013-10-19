@@ -1,0 +1,52 @@
+# vim:iskeyword+=& iskeyword+=- iskeyword+=\+ ft=patch
+VCO1wf:
+VCO1pw:
+VCO1scale:
+VCO2wf: square
+VCO2pitch: 0
+VCO2scale:8'
+port:0
+mastertune:0
+
+VCO1level:0
+VCO2level:10
+fm-mg:0
+fm-eg1:9
+
+HPF-cutoff:0
+HPF-peak:0
+HPF-mgmod:0
+HPF-egmod:0
+
+LPF-cutoff:6.3
+LPF-peak:5.7
+LPF-mgmod:0
+LPF-egmod:0
+
+MG-wf:100%
+MG-F:2.2
+EG1-D:
+EG1-A:
+EG1-R:
+
+EG2-H:0
+EG2-A:.2
+EG2-D:0
+EG2-S:10
+EG2-R:0
+
+MG-sq-out → S&H-clock
+Pink → S&H-in
+S&H-out → VCA-in
+VCA-out → Freq
+
+EG1-rev-out → VCHPF-cutoff
+wheel → VCLPF-cutoff
+volume:2.7
+
+
+
+
+
+
+
