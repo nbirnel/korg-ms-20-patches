@@ -1,0 +1,51 @@
+# vim:ft=synpatch
+# delayed-watery-with-tinkle minus the patches
+VCO1-waveform: saw
+VCO1-pulsewidth: 0
+VCO1-scale: 32'
+VCO2-waveform: saw
+VCO2-pitch: 0
+VCO2-scale: 16'
+Port: 0
+Mastertune: 0
+
+VCO1-level: 10
+VCO2-level: 10
+FM-MG: 0
+FM-EG1: 0 
+
+HPF-cutoff: 2.9
+HPF-peak: 10
+HPF-MG/Total: 0
+HPF-EG2/Ext: 10
+
+LPF-cutoff: 6.1
+LPF-peak: 7.7
+LPF-MG/Total: .8
+LPF-EG2/Ext: 10
+
+MG-waveform: 100%
+MG-freq: 7
+
+EG1-D: 0
+EG1-A: 4.8
+EG1-R: 1,2
+
+EG2-H: 0
+EG2-A: 0
+EG2-D: 0
+EG2-S: 5.8
+EG2-R: .8
+
+volume: 4
+
+White → ESP-signal-in
+ESP-BPF-out → VCA-in
+EG1-out → VCA-CV-in
+VCA-out → VCLPF-cutoff-in
+Wheel → VCHPF-cutoff-in
+KBD-trig-out → S&H-in
+MG-pulse-out → S&H-clock-in
+S&H-out → Freq
+
+
