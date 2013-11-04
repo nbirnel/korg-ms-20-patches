@@ -1,4 +1,5 @@
 # vim:ft=synpatch
+# growling-bass with patches
 VCO1-waveform: saw
 VCO1-pulsewidth: 0
 VCO1-scale: 32'
@@ -11,7 +12,7 @@ Mastertune: 0
 VCO1-level: 10
 VCO2-level: 10
 FM-MG: 0
-FM-EG1: 0 (turn to 10 for tinkle with Freq patch)
+FM-EG1: 10 (0 if removing tinkle portion)
 
 HPF-cutoff: 2.9
 HPF-peak: 10
@@ -45,6 +46,6 @@ VCA-out → VCLPF-cutoff-in
 Wheel → VCHPF-cutoff-in
 KBD-trig-out → S&H-in
 MG-pulse-out → S&H-clock-in
-S&H-out → Freq
+S&H-out → Freq (disconnect to remove tinkle - turn FM-EG1 down)
 
 
