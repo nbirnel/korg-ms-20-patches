@@ -1,0 +1,81 @@
+# vim:iskeyword+=& iskeyword+=- iskeyword+=\+
+# 
+VCO1-waveform: pulse
+VCO1-pulsewidth: 8.30o'
+VCO1-scale: 32'
+VCO2-waveform: square
+VCO2-pitch: 
+VCO2-scale: 16'
+Port: 0
+Mastertune: 0
+
+VCO1-level: 10
+VCO2-level: 9
+FM-MG: 2
+FM-EG1: 0 
+
+HPF-cutoff: 3
+HPF-peak: 3.5
+HPF-MG/Total: 0
+HPF-EG2/Ext: 8.7
+
+LPF-cutoff: 5
+LPF-peak: 6.2
+LPF-MG/Total: 0
+LPF-EG2/Ext: 8
+
+MG-waveform: 6.45o' 
+MG-freq: 1.6
+
+EG1-D: 
+EG1-A: 
+EG1-R: 
+
+EG2-H: 0
+EG2-A: 1
+EG2-D: 1.5
+EG2-S: 5
+EG2-R: 1
+
+Ext-level: 7
+Ext-LC: 0
+Ext-HC: 8.9
+Ext-CV:
+Ext-TL:
+
+volume: 4
+
+[Korg Volca Bass]HP-out → ESP-signal-in
+ESP-BPF-out → Ext-signal-in
+
+pink → VCA-in
+VCA-out → Total
+
+MG-triangle-out → VCHPF-cutoff-in
+Wheel → VCLPF-cutoff-in
+
+--
+Korg Volca Bass
+a1 a2 a3 a4
+a5 a6 a5 a4
+a3 a2 a2 a2
+a2 a1 a1 a1
+all slide
+
+peak: 3.00
+cutoff: 12.15
+rate: 12.50
+int: 8.00
+pitch1: 0
+pitch2: 0
+pitch3: 0
+vol: 12.45
+tempo: 10.0
+attacK: 2.00
+decay: 
+cutoff-eg:
+
+# Pitch wheel at center for muddiness
+# turn pich wheel up for crackle + clarity
+# bring in volca bass for out-of-sync swooping A
+# HPF 'beats' on MG frequency
