@@ -1,0 +1,58 @@
+# vim:iskeyword+=& iskeyword+=- iskeyword+=\+
+# 
+VCO1-waveform: triangle
+VCO1-pulsewidth: 
+VCO1-scale: 32'
+VCO2-waveform: square
+VCO2-pitch: 
+VCO2-scale: 16'
+Port: 0
+Mastertune: 0
+
+VCO1-level: 10
+VCO2-level: 10
+FM-MG: 0
+FM-EG1: 0 
+
+HPF-cutoff: 0
+HPF-peak: 0
+HPF-MG/Total: 0
+HPF-EG2/Ext: 0
+
+LPF-cutoff: 3.8
+LPF-peak: 8
+LPF-MG/Total: 6
+LPF-EG2/Ext: 10
+
+MG-waveform: 12.00o' 
+MG-freq: 7.8
+
+EG1-D: 0
+EG1-A: 3.5
+EG1-R: 1.7
+
+EG2-H: 0
+EG2-A: 0
+EG2-D: 0
+EG2-S: 10
+EG2-R: 1
+
+Ext-level: 
+Ext-LC: 
+Ext-HC: 
+Ext-CV:
+Ext-TL:
+
+volume: 4
+
+KBD-CV-out → VCA-in
+EG1-out → VCA-CV-in
+VCA-out → VCLPF-cutoff-in
+
+# Slow staccato playing gives a ponderous booming tone,
+# followed by a cheerful upward bubble.
+#
+# Fast staccato gives an entertainingly wobbly cardboard thud
+#
+# Legato playing is a not very interesting buzzy tone with 
+# LFO filter stuff.
