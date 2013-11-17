@@ -1,0 +1,51 @@
+# vim:iskeyword+=& iskeyword+=- iskeyword+=\+ ft=patch
+VCO1wf: saw
+VCO1pw:
+VCO1scale: 16'
+VCO2wf: 
+VCO2pitch: 
+VCO2scale:
+port:0
+mastertune:0
+
+VCO1level: 10
+VCO2level: 0
+fm-mg: 10
+fm-eg1: 0
+
+HPF-cutoff:0
+HPF-peak:0
+HPF-mgmod:0
+HPF-egmod:0
+
+LPF-cutoff:10
+LPF-peak:0
+LPF-mgmod:0
+LPF-egmod:0
+
+MG-wf:100%
+MG-F:7.7
+EG1-D:0
+EG1-A:3 (increase for slower arpeggiation)
+EG1-R:
+
+EG2-H:0
+EG2-A:0
+EG2-D:0
+EG2-S:10
+EG2-R:0
+
+MG-sq-out → S&H-clock
+EG1-rev-out → S&H-in
+S&H-out → Total
+
+EG-out → EG1-trigger-in
+
+volume:2.1
+
+
+
+
+
+
+
