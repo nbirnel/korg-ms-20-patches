@@ -1,0 +1,12 @@
+#!/bin/sed -f
+
+s/-> S&H-clock-in$/& #S\&H-in #S\&H-out/
+s/-> S&H-in$/& #S\&H-clock-in #S\&H-out/
+s/^S&H-out.*/& #S\&H-clock-in #S\&H-in/
+
+s/-> VCA-CV-in$/& #VCA-in #VCA-out/
+s/-> VCA-in$/& #VCA-CV-in #VCA-out/
+s/^VCA-out.*/& #VCA-CV-in #VCA-in/
+
+/KBD-trig-out -> Trig-in/d
+/KBD-CV-out -> VCO1+2-CV-in/d

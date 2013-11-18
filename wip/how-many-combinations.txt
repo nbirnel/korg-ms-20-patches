@@ -1,0 +1,83 @@
+How many different patches are available on the Korg MS-20 synthesizer, and
+how can they be organized, cataloged, and compared?
+
+I have been recording my patches, and developing a vim syntax file to make
+this recording easier. The going is harder than I had thought it would be, and
+I started to wonder if there is a way to automate it further. Here are some of
+my intitial thoughts.
+
+There are 15 inputs on the MS-20, and 20 outputs. So there are:
+  P(20,15) = 20·19·18·17·16·15·14·13·12·11·10·9·8·7·6 = 20,274,183,401,472,000
+possible combinations using all inputs. That is more than I want to compute or
+store. So let's back off and try something simpler. How many single cord
+patches are available?
+  15 inputs · 20 outputs = 300 patches
+Now some of these are meaningless; such as patching the Trigger Out directly
+into the Trigger In. We will cull these out manually before continuing. Others
+are meaningless as they stand, but we assume may become more interesting as we
+add more patches; such as patching White Noise into the Sample & Hold In
+without using the Sample & Hold Out. We will perhaps mark these somehow to
+represent 'pointless on their own, but holding promise in combination.'
+
+So, we generate our single-cord patches by brute force in perl - two arrays of
+patch-points, and:
+
+    foreach $output (@outs) {
+        foreach $input (@ins) {
+            printf("%s -> %s\n", $output, $input);
+        }
+    }
+
+Then we edit, looking for the two types of exceptions.
+
+    #!/bin/sed -f
+
+    s/-> S&H-clock-in$/& #S\&H-in #S\&H-out/
+    s/-> S&H-in$/& #S\&H-clock-in #S\&H-out/
+    s/^S&H-out.*/& #S\&H-clock-in #S\&H-in/
+
+    s/-> VCA-CV-in$/& #VCA-in #VCA-out/
+    s/-> VCA-in$/& #VCA-CV-in #VCA-out/
+    s/^VCA-out.*/& #VCA-CV-in #VCA-in/
+
+    /KBD-trig-out -> Trig-in/d
+    /KBD-CV-out -> VCO1+2-CV-in/d
+
+(We will assume that using any of the External Signal Processor outs implies
+that we have plugged something external into the ESP In.)
+
+This still leaves us with 298 'cooked' patches. I had been hoping to cull it
+to under 256, thus leaving us with a byte per patch, but no such luck. There
+are 196 that are conceivably meaningful as they stand, and 102 that could be
+meaningful with two additional patches.
+
+So let us number each one of these patches. The order does not matter, but
+each single-cord patch must have a unique, unambiguous number. We will also
+add patch number 0 to represent 'no patches'. Every possible patch combination
+will include patch 0.
+
+    sed '1iNo-patches' single-patches-cooked | nl -v0 -nln 
+
+Now, we can build arrays for each patch combination we wish to examine. Once
+we have arrays, we can compare any two - do they have the same elements? Which
+elements are missing? 
+
+This does not protect us from impossible patches, however. For instance, the
+patch:
+    MG-triangle-out -> VCHPF-cutoff-in
+    MG-pulse-out -> VCHPF-cutoff-in
+can't exist. If we only need to compare two patches that we know exist, this
+is fine. But if we ever want to sanity-check our patches, we will be stuck.
+
+Let's try this: We will represent each patch combination as an array of
+numbers. We can then compare the arrays to eachother in various ways.  The
+numbers will then represent individual cables in another data structure: an
+array of two-element arrays of 'source' and 'destination'. If we wish to see
+if a given patch is possible, we will gather the destinations of each cable in
+the patch array, and check that they are unique, and ditto for the sources.
+
+OK, I have an idea for a data structure. Coding will wait for another day.
+
+
+
+

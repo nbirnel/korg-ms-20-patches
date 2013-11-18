@@ -1,0 +1,298 @@
+Signal-out -> Total
+Signal-out -> Freq
+Signal-out -> Ext-signal-in
+Signal-out -> VCHPF-cutoff-in
+Signal-out -> VCLPF-cutoff-in
+Signal-out -> VCA-initial
+Signal-out -> VCO1+2-CV-in
+Signal-out -> VCO2-CV-in
+Signal-out -> S&H-clock-in #S&H-in #S&H-out
+Signal-out -> VCA-CV-in #VCA-in #VCA-out
+Signal-out -> EG1-trigger-in
+Signal-out -> Trig-in
+Signal-out -> S&H-in #S&H-clock-in #S&H-out
+Signal-out -> VCA-in #VCA-CV-in #VCA-out
+Signal-out -> ESP-signal-in
+Headphone-out -> Total
+Headphone-out -> Freq
+Headphone-out -> Ext-signal-in
+Headphone-out -> VCHPF-cutoff-in
+Headphone-out -> VCLPF-cutoff-in
+Headphone-out -> VCA-initial
+Headphone-out -> VCO1+2-CV-in
+Headphone-out -> VCO2-CV-in
+Headphone-out -> S&H-clock-in #S&H-in #S&H-out
+Headphone-out -> VCA-CV-in #VCA-in #VCA-out
+Headphone-out -> EG1-trigger-in
+Headphone-out -> Trig-in
+Headphone-out -> S&H-in #S&H-clock-in #S&H-out
+Headphone-out -> VCA-in #VCA-CV-in #VCA-out
+Headphone-out -> ESP-signal-in
+MG-triangle-out -> Total
+MG-triangle-out -> Freq
+MG-triangle-out -> Ext-signal-in
+MG-triangle-out -> VCHPF-cutoff-in
+MG-triangle-out -> VCLPF-cutoff-in
+MG-triangle-out -> VCA-initial
+MG-triangle-out -> VCO1+2-CV-in
+MG-triangle-out -> VCO2-CV-in
+MG-triangle-out -> S&H-clock-in #S&H-in #S&H-out
+MG-triangle-out -> VCA-CV-in #VCA-in #VCA-out
+MG-triangle-out -> EG1-trigger-in
+MG-triangle-out -> Trig-in
+MG-triangle-out -> S&H-in #S&H-clock-in #S&H-out
+MG-triangle-out -> VCA-in #VCA-CV-in #VCA-out
+MG-triangle-out -> ESP-signal-in
+MG-pulse-out -> Total
+MG-pulse-out -> Freq
+MG-pulse-out -> Ext-signal-in
+MG-pulse-out -> VCHPF-cutoff-in
+MG-pulse-out -> VCLPF-cutoff-in
+MG-pulse-out -> VCA-initial
+MG-pulse-out -> VCO1+2-CV-in
+MG-pulse-out -> VCO2-CV-in
+MG-pulse-out -> S&H-clock-in #S&H-in #S&H-out
+MG-pulse-out -> VCA-CV-in #VCA-in #VCA-out
+MG-pulse-out -> EG1-trigger-in
+MG-pulse-out -> Trig-in
+MG-pulse-out -> S&H-in #S&H-clock-in #S&H-out
+MG-pulse-out -> VCA-in #VCA-CV-in #VCA-out
+MG-pulse-out -> ESP-signal-in
+EG1-out -> Total
+EG1-out -> Freq
+EG1-out -> Ext-signal-in
+EG1-out -> VCHPF-cutoff-in
+EG1-out -> VCLPF-cutoff-in
+EG1-out -> VCA-initial
+EG1-out -> VCO1+2-CV-in
+EG1-out -> VCO2-CV-in
+EG1-out -> S&H-clock-in #S&H-in #S&H-out
+EG1-out -> VCA-CV-in #VCA-in #VCA-out
+EG1-out -> EG1-trigger-in
+EG1-out -> Trig-in
+EG1-out -> S&H-in #S&H-clock-in #S&H-out
+EG1-out -> VCA-in #VCA-CV-in #VCA-out
+EG1-out -> ESP-signal-in
+EG2-rev-out -> Total
+EG2-rev-out -> Freq
+EG2-rev-out -> Ext-signal-in
+EG2-rev-out -> VCHPF-cutoff-in
+EG2-rev-out -> VCLPF-cutoff-in
+EG2-rev-out -> VCA-initial
+EG2-rev-out -> VCO1+2-CV-in
+EG2-rev-out -> VCO2-CV-in
+EG2-rev-out -> S&H-clock-in #S&H-in #S&H-out
+EG2-rev-out -> VCA-CV-in #VCA-in #VCA-out
+EG2-rev-out -> EG1-trigger-in
+EG2-rev-out -> Trig-in
+EG2-rev-out -> S&H-in #S&H-clock-in #S&H-out
+EG2-rev-out -> VCA-in #VCA-CV-in #VCA-out
+EG2-rev-out -> ESP-signal-in
+KBD-CV-out -> Total
+KBD-CV-out -> Freq
+KBD-CV-out -> Ext-signal-in
+KBD-CV-out -> VCHPF-cutoff-in
+KBD-CV-out -> VCLPF-cutoff-in
+KBD-CV-out -> VCA-initial
+KBD-CV-out -> VCO2-CV-in
+KBD-CV-out -> S&H-clock-in #S&H-in #S&H-out
+KBD-CV-out -> VCA-CV-in #VCA-in #VCA-out
+KBD-CV-out -> EG1-trigger-in
+KBD-CV-out -> Trig-in
+KBD-CV-out -> S&H-in #S&H-clock-in #S&H-out
+KBD-CV-out -> VCA-in #VCA-CV-in #VCA-out
+KBD-CV-out -> ESP-signal-in
+EG1-rev-out -> Total
+EG1-rev-out -> Freq
+EG1-rev-out -> Ext-signal-in
+EG1-rev-out -> VCHPF-cutoff-in
+EG1-rev-out -> VCLPF-cutoff-in
+EG1-rev-out -> VCA-initial
+EG1-rev-out -> VCO1+2-CV-in
+EG1-rev-out -> VCO2-CV-in
+EG1-rev-out -> S&H-clock-in #S&H-in #S&H-out
+EG1-rev-out -> VCA-CV-in #VCA-in #VCA-out
+EG1-rev-out -> EG1-trigger-in
+EG1-rev-out -> Trig-in
+EG1-rev-out -> S&H-in #S&H-clock-in #S&H-out
+EG1-rev-out -> VCA-in #VCA-CV-in #VCA-out
+EG1-rev-out -> ESP-signal-in
+KBD-trig-out -> Total
+KBD-trig-out -> Freq
+KBD-trig-out -> Ext-signal-in
+KBD-trig-out -> VCHPF-cutoff-in
+KBD-trig-out -> VCLPF-cutoff-in
+KBD-trig-out -> VCA-initial
+KBD-trig-out -> VCO1+2-CV-in
+KBD-trig-out -> VCO2-CV-in
+KBD-trig-out -> S&H-clock-in #S&H-in #S&H-out
+KBD-trig-out -> VCA-CV-in #VCA-in #VCA-out
+KBD-trig-out -> EG1-trigger-in
+KBD-trig-out -> S&H-in #S&H-clock-in #S&H-out
+KBD-trig-out -> VCA-in #VCA-CV-in #VCA-out
+KBD-trig-out -> ESP-signal-in
+S&H-out -> Total #S&H-clock-in #S&H-in
+S&H-out -> Freq #S&H-clock-in #S&H-in
+S&H-out -> Ext-signal-in #S&H-clock-in #S&H-in
+S&H-out -> VCHPF-cutoff-in #S&H-clock-in #S&H-in
+S&H-out -> VCLPF-cutoff-in #S&H-clock-in #S&H-in
+S&H-out -> VCA-initial #S&H-clock-in #S&H-in
+S&H-out -> VCO1+2-CV-in #S&H-clock-in #S&H-in
+S&H-out -> VCO2-CV-in #S&H-clock-in #S&H-in
+S&H-out -> S&H-clock-in #S&H-in #S&H-out #S&H-clock-in #S&H-in
+S&H-out -> VCA-CV-in #S&H-clock-in #S&H-in
+S&H-out -> EG1-trigger-in #S&H-clock-in #S&H-in
+S&H-out -> Trig-in #S&H-clock-in #S&H-in
+S&H-out -> S&H-in #S&H-clock-in #S&H-out #S&H-clock-in #S&H-in
+S&H-out -> VCA-in #S&H-clock-in #S&H-in
+S&H-out -> ESP-signal-in #S&H-clock-in #S&H-in
+VCA-out -> Total #VCA-CV-in #VCA-in
+VCA-out -> Freq #VCA-CV-in #VCA-in
+VCA-out -> Ext-signal-in #VCA-CV-in #VCA-in
+VCA-out -> VCHPF-cutoff-in #VCA-CV-in #VCA-in
+VCA-out -> VCLPF-cutoff-in #VCA-CV-in #VCA-in
+VCA-out -> VCA-initial #VCA-CV-in #VCA-in
+VCA-out -> VCO1+2-CV-in #VCA-CV-in #VCA-in
+VCA-out -> VCO2-CV-in #VCA-CV-in #VCA-in
+VCA-out -> S&H-clock-in #S&H-in #S&H-out #VCA-CV-in #VCA-in
+VCA-out -> VCA-CV-in #VCA-in #VCA-out #VCA-CV-in #VCA-in
+VCA-out -> EG1-trigger-in #VCA-CV-in #VCA-in
+VCA-out -> Trig-in #VCA-CV-in #VCA-in
+VCA-out -> S&H-in #S&H-clock-in #S&H-out #VCA-CV-in #VCA-in
+VCA-out -> VCA-in #VCA-CV-in #VCA-out #VCA-CV-in #VCA-in
+VCA-out -> ESP-signal-in #VCA-CV-in #VCA-in
+Pink -> Total
+Pink -> Freq
+Pink -> Ext-signal-in
+Pink -> VCHPF-cutoff-in
+Pink -> VCLPF-cutoff-in
+Pink -> VCA-initial
+Pink -> VCO1+2-CV-in
+Pink -> VCO2-CV-in
+Pink -> S&H-clock-in #S&H-in #S&H-out
+Pink -> VCA-CV-in #VCA-in #VCA-out
+Pink -> EG1-trigger-in
+Pink -> Trig-in
+Pink -> S&H-in #S&H-clock-in #S&H-out
+Pink -> VCA-in #VCA-CV-in #VCA-out
+Pink -> ESP-signal-in
+White -> Total
+White -> Freq
+White -> Ext-signal-in
+White -> VCHPF-cutoff-in
+White -> VCLPF-cutoff-in
+White -> VCA-initial
+White -> VCO1+2-CV-in
+White -> VCO2-CV-in
+White -> S&H-clock-in #S&H-in #S&H-out
+White -> VCA-CV-in #VCA-in #VCA-out
+White -> EG1-trigger-in
+White -> Trig-in
+White -> S&H-in #S&H-clock-in #S&H-out
+White -> VCA-in #VCA-CV-in #VCA-out
+White -> ESP-signal-in
+Wheel -> Total
+Wheel -> Freq
+Wheel -> Ext-signal-in
+Wheel -> VCHPF-cutoff-in
+Wheel -> VCLPF-cutoff-in
+Wheel -> VCA-initial
+Wheel -> VCO1+2-CV-in
+Wheel -> VCO2-CV-in
+Wheel -> S&H-clock-in #S&H-in #S&H-out
+Wheel -> VCA-CV-in #VCA-in #VCA-out
+Wheel -> EG1-trigger-in
+Wheel -> Trig-in
+Wheel -> S&H-in #S&H-clock-in #S&H-out
+Wheel -> VCA-in #VCA-CV-in #VCA-out
+Wheel -> ESP-signal-in
+Momentary -> Total
+Momentary -> Freq
+Momentary -> Ext-signal-in
+Momentary -> VCHPF-cutoff-in
+Momentary -> VCLPF-cutoff-in
+Momentary -> VCA-initial
+Momentary -> VCO1+2-CV-in
+Momentary -> VCO2-CV-in
+Momentary -> S&H-clock-in #S&H-in #S&H-out
+Momentary -> VCA-CV-in #VCA-in #VCA-out
+Momentary -> EG1-trigger-in
+Momentary -> Trig-in
+Momentary -> S&H-in #S&H-clock-in #S&H-out
+Momentary -> VCA-in #VCA-CV-in #VCA-out
+Momentary -> ESP-signal-in
+ESP-signal-out -> Total
+ESP-signal-out -> Freq
+ESP-signal-out -> Ext-signal-in
+ESP-signal-out -> VCHPF-cutoff-in
+ESP-signal-out -> VCLPF-cutoff-in
+ESP-signal-out -> VCA-initial
+ESP-signal-out -> VCO1+2-CV-in
+ESP-signal-out -> VCO2-CV-in
+ESP-signal-out -> S&H-clock-in #S&H-in #S&H-out
+ESP-signal-out -> VCA-CV-in #VCA-in #VCA-out
+ESP-signal-out -> EG1-trigger-in
+ESP-signal-out -> Trig-in
+ESP-signal-out -> S&H-in #S&H-clock-in #S&H-out
+ESP-signal-out -> VCA-in #VCA-CV-in #VCA-out
+ESP-signal-out -> ESP-signal-in
+ESP-BPF-out -> Total
+ESP-BPF-out -> Freq
+ESP-BPF-out -> Ext-signal-in
+ESP-BPF-out -> VCHPF-cutoff-in
+ESP-BPF-out -> VCLPF-cutoff-in
+ESP-BPF-out -> VCA-initial
+ESP-BPF-out -> VCO1+2-CV-in
+ESP-BPF-out -> VCO2-CV-in
+ESP-BPF-out -> S&H-clock-in #S&H-in #S&H-out
+ESP-BPF-out -> VCA-CV-in #VCA-in #VCA-out
+ESP-BPF-out -> EG1-trigger-in
+ESP-BPF-out -> Trig-in
+ESP-BPF-out -> S&H-in #S&H-clock-in #S&H-out
+ESP-BPF-out -> VCA-in #VCA-CV-in #VCA-out
+ESP-BPF-out -> ESP-signal-in
+ESP-FVCV-out -> Total
+ESP-FVCV-out -> Freq
+ESP-FVCV-out -> Ext-signal-in
+ESP-FVCV-out -> VCHPF-cutoff-in
+ESP-FVCV-out -> VCLPF-cutoff-in
+ESP-FVCV-out -> VCA-initial
+ESP-FVCV-out -> VCO1+2-CV-in
+ESP-FVCV-out -> VCO2-CV-in
+ESP-FVCV-out -> S&H-clock-in #S&H-in #S&H-out
+ESP-FVCV-out -> VCA-CV-in #VCA-in #VCA-out
+ESP-FVCV-out -> EG1-trigger-in
+ESP-FVCV-out -> Trig-in
+ESP-FVCV-out -> S&H-in #S&H-clock-in #S&H-out
+ESP-FVCV-out -> VCA-in #VCA-CV-in #VCA-out
+ESP-FVCV-out -> ESP-signal-in
+ESP-EFCV-out -> Total
+ESP-EFCV-out -> Freq
+ESP-EFCV-out -> Ext-signal-in
+ESP-EFCV-out -> VCHPF-cutoff-in
+ESP-EFCV-out -> VCLPF-cutoff-in
+ESP-EFCV-out -> VCA-initial
+ESP-EFCV-out -> VCO1+2-CV-in
+ESP-EFCV-out -> VCO2-CV-in
+ESP-EFCV-out -> S&H-clock-in #S&H-in #S&H-out
+ESP-EFCV-out -> VCA-CV-in #VCA-in #VCA-out
+ESP-EFCV-out -> EG1-trigger-in
+ESP-EFCV-out -> Trig-in
+ESP-EFCV-out -> S&H-in #S&H-clock-in #S&H-out
+ESP-EFCV-out -> VCA-in #VCA-CV-in #VCA-out
+ESP-EFCV-out -> ESP-signal-in
+ESP-trig-out -> Total
+ESP-trig-out -> Freq
+ESP-trig-out -> Ext-signal-in
+ESP-trig-out -> VCHPF-cutoff-in
+ESP-trig-out -> VCLPF-cutoff-in
+ESP-trig-out -> VCA-initial
+ESP-trig-out -> VCO1+2-CV-in
+ESP-trig-out -> VCO2-CV-in
+ESP-trig-out -> S&H-clock-in #S&H-in #S&H-out
+ESP-trig-out -> VCA-CV-in #VCA-in #VCA-out
+ESP-trig-out -> EG1-trigger-in
+ESP-trig-out -> Trig-in
+ESP-trig-out -> S&H-in #S&H-clock-in #S&H-out
+ESP-trig-out -> VCA-in #VCA-CV-in #VCA-out
+ESP-trig-out -> ESP-signal-in
